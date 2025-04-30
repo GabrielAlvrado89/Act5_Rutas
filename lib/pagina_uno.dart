@@ -10,30 +10,94 @@ class PrimerPantalla extends StatelessWidget {
         title: const Text(
           "Primer Pantalla",
           style: TextStyle(
-            color: Colors.white,
-            fontSize: 30.0,
+            color: Colors.white, // Establece el color de la letra a blanco
+            fontSize: 25.0, // Establece el tamaño de la letra a 15
           ),
         ),
-        backgroundColor: Colors.indigo,
+        backgroundColor: Color(0xff2555a8),
         centerTitle: true,
       ),
       body: Column(
         children: [
-          Center(
-            child: ElevatedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, "/pantalla2");
-              },
-              child: const Text("Segunda Pantalla"),
-            ),
+          SizedBox(
+            height: 30,
           ),
           Center(
             child: ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, "/pantalla3");
+                Navigator.pushNamed(context, '/pantalla2');
               },
-              child: const Text("Tercer Pantalla"),
+              child: const Text('Segunda Pantalla'),
             ),
+          ),
+          SizedBox(
+            height: 30,
+          ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/pantalla3');
+              },
+              child: const Text('Tercer Pantalla'),
+            ),
+          ),
+          SizedBox(
+            height: 30,
+          ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/pantalla4');
+              },
+              child: const Text('Cuarta Pantalla'),
+            ),
+          ),
+          SizedBox(
+            height: 30,
+          ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/pantalla5');
+              },
+              child: const Text('Quinta Pantalla'),
+            ),
+          ),
+          SizedBox(
+            height: 30,
+          ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/pantalla6');
+              },
+              child: const Text('Sexta Pantalla'),
+            ),
+          ),
+          SizedBox(
+            height: 30,
+          ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/pantalla8');
+              },
+              child: const Text('Octava Pantalla'),
+            ),
+          ),
+          SizedBox(
+            height: 30,
+          ),
+          Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/pantalla9');
+              },
+              child: const Text('Novena Pantalla'),
+            ),
+          ),
+          SizedBox(
+            height: 30,
           ),
         ],
       ),
